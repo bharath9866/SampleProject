@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeButtonView">
+        <attr name="sb_swipe_bg_color" format="color" />
+        <attr name="sb_thumb_bg_color" format="color" />
+        <attr name="sb_stroke_bg_color" format="color" />
+        <attr name="sb_thumb_image" format="reference" />
+        <attr name="sb_swipe_text" format="string" />
+        <attr name="sb_swipe_text_color" format="color" />
+        <attr name="sb_swipe_animate_text" format="boolean" />
+        <attr name="sb_swipe_text_size" format="dimension" />
+        <attr name="sb_swipe_reverse" format="boolean" />
+        <attr name="sb_swipe_both_direction" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="YouTubePlayerSeekBar">
+        <attr name="fontSize" format="dimension" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LearnerCircularProgressView">
+        <attr name="totalValue" format="integer" />
+        <attr name="totalColor" format="color" />
+        <attr name="totalWidth" format="dimension" />
+
+        <attr name="totalValue2" format="integer" />
+        <attr name="totalColor2" format="color" />
+
+
+        <attr name="progressValue" format="integer" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="progressRoundCap" format="boolean" />
+
+
+        <attr name="progressValue2" format="integer" />
+        <attr name="progressColor2" format="color" />
+        <attr name="progressRoundCap2" format="boolean" />
+
+
+        <attr name="widthBetweenTwoProgress" format="dimension" />
+
+
+        <attr name="progressInterpolator" format="reference" />
+
+        <attr name="imageComponent" format="reference" />
+
+        <attr name="fillColor" format="color" />
+
+        <attr name="startAngle" format="float" />
+
+        <attr name="animate" format="boolean" />
+        <attr name="animateDuration" format="integer" />
+    </declare-styleable>
+</resources>

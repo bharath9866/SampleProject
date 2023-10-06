@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/learnerCircleProgress"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/learnerBgCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:contentDescription="Learner Background Circle"
+        android:src="@drawable/learning_bg_circle_img"
+        app:layout_constraintBottom_toBottomOf="@+id/learnerCircleProgress"
+        app:layout_constraintEnd_toEndOf="@+id/learnerCircleProgress"
+        app:layout_constraintStart_toStartOf="@+id/learnerCircleProgress"
+        app:layout_constraintTop_toTopOf="@+id/learnerCircleProgress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+    </ImageView>
+
+    <com.example.sampleproject.LearnerCircularProgressView
+        android:id="@+id/learnerCircleProgressView"
+        android:layout_width="@dimen/dimen_47dp"
+        android:layout_height="@dimen/dimen_47dp"
+        app:layout_constraintTop_toTopOf="@id/learnerBgCircle"
+        app:layout_constraintEnd_toEndOf="@id/learnerBgCircle"
+        app:layout_constraintBottom_toBottomOf="@id/learnerBgCircle"
+        app:layout_constraintStart_toStartOf="@id/learnerBgCircle"
+        android:visibility="visible"
+        app:animate="true"
+        app:animateDuration="600"
+        app:fillColor="@android:color/transparent"
+        app:progressColor2="#00BA88"
+        app:progressColor="#F4B740"
+        app:progressInterpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:progressRoundCap2="true"
+        app:progressRoundCap="true"
+        app:progressValue="75"
+        app:progressValue2="60"
+        app:progressWidth="6dp"
+        app:startAngle="270"
+        app:totalColor2="#A1E2D4"
+        app:totalColor="#F3E1C1"
+        app:totalValue2="100"
+        app:totalValue="100"
+        app:widthBetweenTwoProgress="4dp"
+        app:totalWidth="@dimen/dimen_6dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_17dp"
+        android:layout_height="@dimen/_17dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/learning_image_floating_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

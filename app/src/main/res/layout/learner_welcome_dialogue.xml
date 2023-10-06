@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learnerScoreWelcomeDialogue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_16dp"
+    android:background="@drawable/rounded_corner"
+    android:padding="@dimen/_16dp"
+    android:visibility="visible">
+
+<!-- <include
+        android:id="@+id/learnerWelcomeSlideItemInclude"
+        layout="@layout/learner_welcome_slide_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintStart_toStartOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintTop_toTopOf="@+id/learnerScoreWelcomeDialogue" />-->
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/introSliderViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintStart_toStartOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintTop_toTopOf="@+id/learnerScoreWelcomeDialogue"/>
+
+    <LinearLayout
+        android:id="@+id/indicatorsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/introSliderViewPager"
+        app:layout_constraintBottom_toTopOf="@id/learnerViewProgressButton"
+        app:layout_constraintStart_toStartOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintEnd_toEndOf="@+id/learnerScoreWelcomeDialogue"/>
+
+    <ImageView
+        android:id="@+id/learnerViewProgressButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:paddingBottom="40dp"
+        android:src="@drawable/learner_button_img"
+        app:layout_constraintBottom_toBottomOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintEnd_toEndOf="@+id/indicatorsContainer"
+        app:layout_constraintStart_toStartOf="@+id/indicatorsContainer"
+        app:layout_constraintTop_toBottomOf="@+id/indicatorsContainer" />
+
+    <ImageView
+        android:id="@+id/learnerWelcomePageCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:src="@drawable/ic_cross_icon_img"
+        app:layout_constraintEnd_toEndOf="@+id/learnerScoreWelcomeDialogue"
+        app:layout_constraintTop_toTopOf="@+id/learnerScoreWelcomeDialogue" />
+</androidx.constraintlayout.widget.ConstraintLayout>

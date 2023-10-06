@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/learnerMotionLayoutFloatingBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_93dp"
+    android:visibility="visible"
+    app:layoutDescription="@xml/learner_performance_activity_bar_scene">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/learnerGlossyBgId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/background"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/learnerMotionLayoutFloatingBar"
+        app:layout_constraintStart_toStartOf="@+id/learnerMotionLayoutFloatingBar"
+        app:layout_constraintBottom_toBottomOf="@+id/learnerMotionLayoutFloatingBar"
+        app:layout_constraintTop_toTopOf="@+id/learnerMotionLayoutFloatingBar"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/learnerGlossyBgId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:contentDescription="@string/background"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/ic_blur_bg"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/learnerMotionLayoutFloatingBar"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/learnerMotionLayoutFloatingBar"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/learnerMotionLayoutFloatingBar"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/learnerMotionLayoutFloatingBar"/>-->
+
+    <LinearLayout
+        android:id="@+id/learnerPerformanceActivityBarBgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/learner_performance_score_bar_bg_img"
+        android:orientation="horizontal"
+        android:padding="@dimen/_16dp"
+        android:visibility="gone"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="@+id/learnerGlossyBgId"
+        app:layout_constraintStart_toStartOf="@+id/learnerGlossyBgId"
+        app:layout_constraintTop_toTopOf="@+id/learnerGlossyBgId">
+
+        <LinearLayout
+            android:id="@+id/learnerPerformanceComponentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/learnerPerformanceId"
+                android:layout_width="117dp"
+                android:layout_height="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center_vertical"
+                android:lineHeight="@dimen/_16sp"
+                android:lineSpacingExtra="1sp"
+                android:text="Performance"
+                android:textColor="#D9DBE9"
+                android:textSize="@dimen/text_12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lineHeight="@dimen/text_26sp"
+                    android:text="80"
+                    android:textColor="#FFD789"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_8dp"
+                        android:src="@drawable/learner_performance_down_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:lineHeight="@dimen/text_14sp"
+                        android:lineSpacingExtra="1sp"
+                        android:text="12"
+                        android:textColor="#FF84B7"
+                        android:textSize="@dimen/text_11sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/learnerActivityComponentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/learnerActivityId"
+                android:layout_width="117dp"
+                android:layout_height="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center_vertical"
+                android:lineHeight="@dimen/_16sp"
+                android:lineSpacingExtra="1sp"
+                android:text="Activity"
+                android:textColor="#D9DBE9"
+                android:textSize="@dimen/text_12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lineHeight="@dimen/text_26sp"
+                    android:text="56"
+                    android:textColor="#34EAB9"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_8dp"
+                        android:src="@drawable/learner_performance_up_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:lineHeight="@dimen/text_14sp"
+                        android:lineSpacingExtra="1sp"
+                        android:text="34"
+                        android:textColor="#A0A3BD"
+                        android:textSize="@dimen/text_11sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/learner_expanded_bar_circle_progress_include"
+            layout="@layout/learner_performance_activity_circular_progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/learnerCollapsedFloatingBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/learnerGlossyCollapsedFloatingBarBgId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="CollapsedFloatingButton"
+            android:src="@drawable/learner_performance_activity_collapsed__bar_bg"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/learner_collapsed_bar_circle_progress_include"
+            layout="@layout/learner_performance_activity_circular_progress_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

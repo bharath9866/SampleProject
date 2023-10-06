@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/learnerMotionLayoutFloatingNullBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_93dp"
+    android:visibility="visible"
+    app:layoutDescription="@xml/learner_performance_activity_null_bar_scene">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/learnerGlossyBgId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/background"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/learnerMotionLayoutFloatingBar"
+        app:layout_constraintStart_toStartOf="@+id/learnerMotionLayoutFloatingBar"
+        app:layout_constraintBottom_toBottomOf="@+id/learnerMotionLayoutFloatingBar"
+        app:layout_constraintTop_toTopOf="@+id/learnerMotionLayoutFloatingBar"/>
+
+    <LinearLayout
+        android:id="@+id/learnerPerformanceActivityNullBarBgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingVertical="@dimen/_16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="22dp"
+        android:background="@drawable/learner_performance_score_null_bar_bg_img"
+        app:layout_constraintEnd_toEndOf="@+id/learnerGlossyBgId"
+        app:layout_constraintStart_toStartOf="@+id/learnerGlossyBgId"
+        app:layout_constraintTop_toTopOf="@+id/learnerGlossyBgId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn more, Score More"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="@dimen/text_16sp"
+                android:lineHeight="@dimen/text_24sp"
+                android:textColor="#14142B" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/_18dp"
+                android:layout_height="@dimen/_18dp"
+                android:src="@drawable/learner_right_arror_img" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetuer"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/text_12sp"
+            android:lineHeight="@dimen/text_20sp"
+            android:textColor="#14142B" />
+    </LinearLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/learnerWelcomeSlideItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/learnerWelcomeSlideImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:src="@drawable/learner_welcome_1_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/learnerWelcomeSlideItem"
+        app:layout_constraintBottom_toTopOf="@+id/learnerWelcomeTitleDescription"/>
+
+    <LinearLayout
+        android:id="@+id/learnerWelcomeTitleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_8dp"
+        android:paddingHorizontal="@dimen/dimen_3dp"
+        app:layout_constraintEnd_toEndOf="@id/learnerWelcomeSlideItem"
+        app:layout_constraintStart_toStartOf="@id/learnerWelcomeSlideItem"
+        app:layout_constraintTop_toBottomOf="@+id/learnerWelcomeSlideImg">
+
+        <TextView
+            android:id="@+id/learnerWelcomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineHeight="32.sp"
+            android:lineSpacingExtra="8sp"
+            android:text="Weekly Insights"
+            android:textAlignment="center"
+            android:textColor="#14142B"
+            android:textSize="20.sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/learnerWelcomeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineHeight="18.sp"
+            android:lineSpacingExtra="1sp"
+            android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+            android:textColor="#4E4B66"
+            android:textSize="14.sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
